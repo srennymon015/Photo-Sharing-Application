@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Upload Post</title>
+
+      <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+      <script type="text/javascript" src="JS/bootstrap.js"></script>
+      <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="JS/upload.js"></script>
+
+
+  </head>
+  
+  <body>
+
+    <div  class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="timeline.html">RENNYGRAM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="timeline.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="users.html">Follow Users</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="upload.html">Upload</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h1>UPLOAD POST</h1>
+
+              <form style="font-size: 10pt;" id="uploadForm">
+
+                <div class="mb-3">
+                  <label for="UploadFile" class="form-label">File to Upload</label>
+                  <input type="file" class="form-control" id="UploadFile">
+                </div>
+            
+                <button type="button" id="uploadPostBtn" class="btn btn-primary">Upload</button> <br/><br/>
+                
+              </form>
+
+
+
+    </div>
+  
+  </body>
+</html>

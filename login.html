@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Log In</title>
+
+      <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+      <script type="text/javascript" src="JS/bootstrap.js"></script>
+      <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="JS/login.js"></script>
+
+
+  </head>
+  
+  <body>
+
+    <div  class="container">
+
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: center;">
+              <h3>RENNYGRAM</h3>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+        <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+          <p>Log In</p>
+
+          <form style="font-size: 10pt;" id="logInForm">
+            <div class="mb-3">
+              <label for="userName" class="form-label">Username</label>
+              <input type="text" class="form-control" id="userName">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password">
+              <input type="checkbox" id="showPassword">Show Password
+            </div>
+        
+            <button type="button" id="logIn" class="btn btn-primary">Log In</button>
+            
+          </form>
+        </div>
+
+
+    </div>
+  
+  </body>
+</html>
