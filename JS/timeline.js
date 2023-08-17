@@ -23,6 +23,7 @@ $(document).ready(function() {
             }
         });
     });
+    followingList.push(localStorage.getItem('userName'));
 
     $.getJSON(GET_POSTS, function(data){
         $.each( data, function( key, val ) {
@@ -109,7 +110,6 @@ $(document).ready(function() {
         data: likeObj,
         contentType: 'application/json; charset=utf-8'
       }).done(function (response) {
-        window.location.href = window.location.href;
         location.reload();
       }).fail(function(){
         alert("Error liking post");
@@ -131,7 +131,6 @@ $(document).ready(function() {
         data: commentObj,
         contentType: 'application/json; charset=utf-8'
       }).done(function (response) {
-        window.location.href = window.location.href;
         location.reload();
       })
       .fail(function(response){

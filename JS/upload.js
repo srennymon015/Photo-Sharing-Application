@@ -22,7 +22,7 @@ function uploadPost(){
       processData: false,
       type: 'POST',
       success: function(data){
-        alert("Upload Successful");
+        window.location.href="timeline.html"
       },
       error: function(data){
         alert("Upload failed. Please try again. Inappropriate media will not be allowed.");

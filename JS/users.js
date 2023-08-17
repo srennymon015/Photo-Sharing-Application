@@ -63,7 +63,6 @@ $(document).ready(function() {
         data: followObj,
         contentType: 'application/json; charset=utf-8'
       }).done(function (response) {
-        window.location.href = window.location.href;
         location.reload();
       });
     
